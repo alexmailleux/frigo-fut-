@@ -9,6 +9,15 @@
  * sans toucher au reste du code.
  */
 
+import {
+  DISCRETE_UNITS,
+  normalizeKey,
+  scaledQty,
+  roundForBuying,
+  isStapleIngredient,
+  categorizeIngredient,
+} from './utils.js';
+
 const LS_KEYS = {
   profile: "repas_local_profile",
   weekSelections: "repas_local_week",
@@ -639,3 +648,5 @@ function createStore() {
   }
   return LocalStore;
 }
+
+export { createStore };

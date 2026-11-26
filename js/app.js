@@ -1,3 +1,16 @@
+import { RECIPES } from './recipes-data.js';
+import {
+  normalizeKey,
+  scaledQty,
+  isStapleIngredient,
+  categorizeIngredient,
+  roundForBuying,
+  formatQty,
+  uid,
+  DISCRETE_UNITS,
+} from './utils.js';
+import { createStore } from './store.js';
+
 const EMOJI_CHOICES = ["🍽️","🍜","🍝","🍛","🥘","🥗","🌮","🌯","🍲","🥙","🍳","🍕","🥩","🐟","🍚","🥑"];
 const PREP_SLIDER_MAX = 90;
 

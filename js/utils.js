@@ -186,3 +186,14 @@ function categorizeIngredient(name) {
   }
   return "Autres";
 }
+
+export {
+  DISCRETE_UNITS,
+  isStapleIngredient,
+  normalizeKey,
+  scaledQty,
+  roundForBuying,
+  formatQty,
+  uid,
+  categorizeIngredient,
+};

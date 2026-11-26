@@ -11851,3 +11851,5 @@ const RECIPES = [
     ]
   }
 ];
+
+export { RECIPES };
